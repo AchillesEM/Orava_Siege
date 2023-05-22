@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public string gameState;
-    public GameObject startScreen, endScreen, instructionScreen, reftoPlay, reftoBack, reftoAttack, reftoPlayAgain, reftoInstructions;
+    public GameObject startScreen, endScreen, instructionScreen, reftoPlay, reftoBack, reftoAttack, reftoPlayAgain, reftoInstructions, reftoArcher, reftoMage, reftoWarrior;
     public float score; 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
         if (gameState == "playable")
         {
             print("kablamm");
+            //add buttons to turn on here
         }
     }
 
@@ -56,6 +57,27 @@ public class GameManager : MonoBehaviour
         endScreen.SetActive(false);
         instructionScreen.SetActive(false);
         SceneManager.LoadScene("SampleScene");
+    }
+
+   
+    public void EndTurnButton()
+    {
+       // player must choose which character to play
+    }
+
+    public void ArcherButton()
+    {
+        // activates archer movement
+    }
+
+    public void MageButton()
+    {
+        // activates mage movement
+    }
+
+    public void WarriorButton()
+    {
+        // activates warrior movement
     }
 
     //play again and back button, play again completely reload scene
