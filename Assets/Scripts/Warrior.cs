@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Warrior : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public new string name;
+
+    public int health;
+    public int damage;
     void Start()
     {
         
